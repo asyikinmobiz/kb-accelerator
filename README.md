@@ -51,7 +51,7 @@ To deploy the necessary Azure infrastructure, click on the appropriate **Deploy 
   [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fasyikinmobiz%2Fkb-accelerator%2Fmain%2Fdeployment%2Foneclick.json)
 
 - **With Azure OpenAI**:  
-  [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2F2Fasyikinmobiz%2Fkb-accelerator%2Fmain%2Fdeployment%2Foneclickaoi.json)
+  [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fasyikinmobiz%2Fkb-accelerator%2Fmain%2Fdeployment%2Foneclickaoi.json)
 
 > **Important**: This will provision the infrastructure only. You must complete the following manual steps to finalize the deployment.
 
@@ -82,10 +82,10 @@ If your Knowledge Bot HR integrates with OpenAI models, follow these steps:
 
 1. Go to the **Azure Function App** resource that was provisioned during deployment.
 2. In the **Functions** tab, click **Add** to create a new function.
-3. Select the appropriate template (e.g., HTTP Trigger) based on your chatbot logic.
+3. Select the appropriate template (Blob Trigger) based on your chatbot logic.
 4. Add the **function code** that handles requests to and from the chatbot's backend.
-   - You can upload a file, or paste the code into the portal's editor.
-5. Save and test the function by sending requests from the chatbot.
+   - use deployment center to deploy code using github connection. Use the ingestionfunction folder for deploying the function code.
+5. Save and test the function by uploading a file from the chatbot.
 
 ### Step 5: Test Your Deployment
 
