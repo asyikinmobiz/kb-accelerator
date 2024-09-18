@@ -832,7 +832,8 @@
             { "name": "DOCKER_ENABLE_CI", "value": "True" },
             { "name": "DOCKER_REGISTRY_SERVER_USERNAME", "value": "[parameters('acrUsername')]" },
             { "name": "DOCKER_REGISTRY_SERVER_URL", "value": "[format('https://{0}', variables('acrLoginServer'))]" },
-            { "name": "DOCKER_REGISTRY_SERVER_PASSWORD", "value": "[parameters('acrPassword')]" }
+            { "name": "DOCKER_REGISTRY_SERVER_PASSWORD", "value": "[parameters('acrPassword')]" },
+            { "name": "ORGANIZATION_NAME", "value": "[parameters('organizationName')]" }
           ]
         }
       }
