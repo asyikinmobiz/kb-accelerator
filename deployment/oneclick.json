@@ -24,7 +24,7 @@
       "type": "string",
       "defaultValue": "[toLower(split(parameters('organizationName'), ' ')[0])]",
       "metadata": {
-        "description": "Auto-generated application name acronym. The application name to be used as a prefix for all resources."
+        "description": "Enter application name. The application name will be used as a prefix for all resources."
       }
     },
     "location": {
@@ -496,7 +496,7 @@
     //////////Azure OpenAI//////////
     {
       "type": "Microsoft.CognitiveServices/accounts",
-      "apiVersion": "2021-04-30",
+      "apiVersion": "2024-06-01-preview",
       "name": "[parameters('openAiServiceName')]",
       "location": "[parameters('location')]",
       "sku": {
@@ -763,7 +763,7 @@
             { "name": "INDEX_DOCUMENT", "value": "False" },
             { "name": "INDEX_NAME", "value": "[concat(parameters('applicationName'), '-index')]" },
             { "name": "ENABLE_JSON_INGESTION", "value": "True" },
-            { "name": "ENBALE_SIMPLE_TEXT_INGESTION", "value": "True" },
+            { "name": "ENABLE_SIMPLE_TEXT_INGESTION", "value": "True" },
             { "name": "ENABLE_TEXT_RAPTOR_INGESTION", "value": "False" },
             { "name": "ENABLE_TABLE_INGESTION", "value": "False" },
             { "name": "ENABLE_IMAGE_INGESTION", "value": "False" },
