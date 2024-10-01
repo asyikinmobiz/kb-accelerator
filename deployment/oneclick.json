@@ -22,7 +22,6 @@
     },
     "applicationName": {
       "type": "string",
-      "defaultValue": "[toLower(split(parameters('organizationName'), ' ')[0])]",
       "metadata": {
         "description": "Enter application name. The application name will be used as a prefix for all resources."
       }
